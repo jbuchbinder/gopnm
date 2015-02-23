@@ -322,7 +322,6 @@ func skipComments(r *bufio.Reader, singleSpace bool) (err error) {
 			}
 		}
 	}
-	return
 }
 
 // DecodeConfigPNM reads and returns header data of PNM files.
@@ -411,7 +410,11 @@ func DecodeConfig(r io.Reader) (image.Config, error) {
 		}
 	}
 
-	return image.Config{cm, c.Width, c.Height}, nil
+	return image.Config{
+		ColorModel: cm,
+		Width:      c.Width,
+		Height:     c.Height,
+	}, nil
 }
 
 func init() {
