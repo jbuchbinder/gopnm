@@ -34,7 +34,7 @@ func TestDecodeRawRGB(t *testing.T) {
 	}
 
 	for i := 0; i < len(png.Pix); i++ {
-		t.Log("(", png.Pix[i], ",", pnm.Pix[i], ")")
+		//t.Log("(", png.Pix[i], ",", pnm.Pix[i], ")")
 		if png.Pix[i] != pnm.Pix[i] {
 			t.Fatal("Incorrect pixel at position", i, "found", pnm.Pix[i], "but expected", png.Pix[i])
 		}
