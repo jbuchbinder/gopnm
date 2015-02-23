@@ -1,22 +1,24 @@
-Package pnm
-===========
+# Package pnm
+
+[![Build Status](https://secure.travis-ci.org/jbuchbinder/gopnm.png)](http://travis-ci.org/jbuchbinder/gopnm)
+[![GoDoc](https://godoc.org/github.com/jbuchbinder/gopnm?status.png)](https://godoc.org/github.com/jbuchbinder/gopnm)
 
 Package pnm implements a PBM, PGM and PPM image decoder and encoder.
 
 This package is compatible with Go version 1.
 
 
-### Installation
+## Installation
 
+```
 	go install github.com/harrydb/go/img/pnm
+```
 
-
-### Documention
+## Documention
 
 See: https://gopkgdoc.appspot.com/pkg/github.com/harrydb/go/img/pnm
 
-
-### Limitations
+## Limitations
 
 Not implemented are:
 
@@ -26,3 +28,4 @@ Not implemented are:
 * Reading/and writing PAM images.
 
 (I would be happy to accept patches for these.)
+
