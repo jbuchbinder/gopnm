@@ -11,12 +11,8 @@ This package is compatible with Go version 1.
 ## Installation
 
 ```
-	go install github.com/harrydb/go/img/pnm
+	go install github.com/jbuchbinder/gopnm
 ```
-
-## Documention
-
-See: https://gopkgdoc.appspot.com/pkg/github.com/harrydb/go/img/pnm
 
 ## Limitations
 
