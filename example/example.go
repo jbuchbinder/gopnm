@@ -5,13 +5,13 @@
 package main
 
 import (
-	"github.com/harrydb/go/img/pnm"
+	"github.com/jbuchbinder/gopnm"
 	"image"
 	"log"
 	"os"
 )
 
-func Main() {
+func main() {
 	file, err := os.Open("in.ppm")
 	if err != nil {
 		log.Fatal(err)
