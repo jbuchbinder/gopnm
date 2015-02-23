@@ -9,7 +9,7 @@
 // per channel.
 //
 // To only be able to load pnm images using image.Decode, use
-//	import _ "github.com/harrydb/go/img/pnm"
+//	import _ "github.com/jbuchbinder/gopnm"
 //
 // Not implemented are:
 //	- Writing pnm files in raw format.
