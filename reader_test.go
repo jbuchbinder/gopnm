@@ -16,14 +16,18 @@ func TestDecodeRawRGB(t *testing.T) {
 	pngFile := openFile(t, "testdata/test_rgb.png")
 	defer pngFile.Close()
 	defer pnmFile.Close()
-	pnmImage, format, err := image.Decode(pnmFile)
-	pngImage, _, err := image.Decode(pngFile)
-	pnm := pnmImage.(*image.RGBA)
-	png := pngImage.(*image.RGBA)
 
+	pnmImage, format, err := image.Decode(pnmFile)
 	if err != nil {
 		t.Fatal(err)
 	}
+	pngImage, _, err := image.Decode(pngFile)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	pnm := pnmImage.(*image.RGBA)
+	png := pngImage.(*image.RGBA)
 
 	if format != "ppm raw (rgb)" {
 		t.Fatal("Unexpected format:", format, "expecting ppm raw (rgb)")
